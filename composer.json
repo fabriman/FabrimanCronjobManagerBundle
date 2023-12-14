@@ -1,0 +1,39 @@
+{
+  "name": "fabriman/cronjob-manager",
+  "version": "1.0.0",
+  "type": "symfony-bundle",
+  "description": "Fabriman Cronjob Manager",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "symfony/cache": "^6.3 || ^7.0",
+    "symfony/config": "^6.3 || ^7.0",
+    "symfony/dependency-injection": "^6.3 || ^7.0",
+    "symfony/event-dispatcher": "^6.3 || ^7.0",
+    "symfony/http-kernel": "^6.3 || ^7.0"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^v6.3 || ^7.0.1",
+    "symfony/framework-bundle": "^v6.3 || ^7.0.1",
+    "doctrine/doctrine-bundle": "^2.11",
+    "doctrine/doctrine-migrations-bundle": "^3.3",
+    "doctrine/orm": "^2.17",
+    "symfony/validator": "7.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fm\\CronjobManagerBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fm\\CronjobManagerBundle\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Fabrizio Manca",
+      "email": "contact@fabriziomanca.fr"
+    }
+  ]
+}

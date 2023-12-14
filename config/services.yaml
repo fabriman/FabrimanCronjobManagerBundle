@@ -1,0 +1,14 @@
+parameters:
+  cronjob_log_directory: "%kernel.project_dir%/public/bundles/fmcronjobmanager/Cronjob/log"
+
+services:
+    _defaults:
+      autowire: true
+      autoconfigure: true
+
+    FmCronjobManagerBundle\:
+      namespace: 'Fm\CronjobManagerBundle\'
+      resource: '../src/'
+      exclude:
+        - '../src/DependencyInjection/'
+        - '../src/Kernel.php'
