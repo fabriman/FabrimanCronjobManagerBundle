@@ -12,11 +12,39 @@
 
 **License**: <small>MIT</small>
 
+---
+
+A Symfony Bundle to manage recurring tasks
+
 ## Installation
 
     composer require fabriman/cronjob-manager
 
-## New Cronjob File Controller Example
+### Create the database table
+
+    php bin/console make:migration
+    php bin/console doctrine:migration:migrate
+
+## Usage
+
+Get existing jobs
+
+    php bin/console cronjob:list
+
+Create new job
+
+    php bin/console cronjob:new
+
+Update existing job
+
+    php bin/console cronjob:update
+
+Delete existing job
+
+    php bin/console cronjob:delete
+
+
+## Example of a new Cronjob task
 Create a cronjob controller:
 
     <?php
