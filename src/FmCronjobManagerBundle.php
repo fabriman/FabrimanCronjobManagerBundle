@@ -2,11 +2,11 @@
 
 namespace Fm\CronjobManagerBundle;
 
-use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Fm\CronjobManagerBundle\DependencyInjection\FmCronjobManagerBundleExtension;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class FmCronjobManagerBundle extends AbstractBundle
+class FmCronjobManagerBundle extends Bundle
 {
     public function getPath(): string
     {
