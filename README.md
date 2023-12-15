@@ -1,17 +1,5 @@
 ## FmCronjobManager
 
-***
-
-**Author**: <small>Fabrizio Manca</small>
-
-**Email**: <small>contact@fabriziomanca.fr</small>
-
-**Requires**: <small>Symfony >= 6.3</small>
-
-**Requires**: <small>PHP >= 8.0</small>
-
-**License**: <small>MIT</small>
-
 ---
 
 A Symfony Bundle to manage recurring tasks
