@@ -7,7 +7,7 @@
 ---
 
 
-A Symfony Bundle to manage recurring tasks
+A Symfony 5.4 Bundle to manage recurring tasks
 
 ## Installation
 
