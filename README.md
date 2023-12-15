@@ -8,7 +8,7 @@
 
 **Requires**: <small>Symfony >= 6.3</small>
 
-**Requires**: <small>PHP >= 8.2</small>
+**Requires**: <small>PHP >= 8.0</small>
 
 **License**: <small>MIT</small>
 
@@ -54,12 +54,12 @@ Create a cronjob controller:
     use Symfony\Component\Routing\Annotation\Route;
     use Doctrine\ORM\EntityManagerInterface;
     use Symfony\Component\HttpFoundation\Response;
-    use Fm\CronjobManagerBundle\Service\CronjobExecutionServcie;
+    use Fm\CronjobManagerBundle\Service\CronjobExecutionService;
     use Throwable;
     use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
     
     #[Route("/main/route")]
-    class YourClassName extends CronjobExecutionServcie
+    class YourClassName extends CronjobExecutionService
     {
         
         // Change the cronjob name wih your cronjob name (Names are uniques)
