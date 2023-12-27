@@ -75,8 +75,15 @@
                 );
 
                 if($id){
+
+                    if(!is_dir($this->params->get('cronjob_log_directory') . '/' . $id)){
+                        throw new \Exception("Select a valid id!");
+                    }
+
                     $directory = $this->params->get('cronjob_log_directory') . '/' . $id . "/";
                     $finder->files()->in($directory);
+                    $finder->sortByModifiedTime();
+                    $finder->reverseSorting();
 
                     $n = 0;
                     foreach ($finder as $file) {
@@ -103,6 +110,12 @@
                             )
                         ),
                     );
+
+
+
+                    if(!array_key_exists($log, $logs) || !file_exists($logs[$log])){
+                        throw new \Exception("Select a valid log!");
+                    }
 
                     $output->writeln(file_get_contents($logs[$log]));
                 }
