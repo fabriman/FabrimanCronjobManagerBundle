@@ -64,7 +64,7 @@
         {
 
             $directory = $this->params->get('cronjob_log_directory') . '/' . $this->jobId . "/";
-            $file_name = (new DateTime())->format("YmdHis") . ".txt";
+            $file_name = (new DateTime())->format("Y_m_d_H_i_s") . ".txt";
             $this->full_log_file_path = $directory.$file_name;
 
             try {
