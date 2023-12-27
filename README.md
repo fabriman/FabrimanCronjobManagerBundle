@@ -13,6 +13,10 @@ A Symfony Bundle to manage recurring tasks
     php bin/console make:migration
     php bin/console doctrine:migration:migrate
 
+#### Create the log folder
+
+    mkdir 0777 public/Cronjob
+
 ## Usage
 
 Get existing jobs
@@ -30,6 +34,10 @@ Update existing job
 Delete existing job
 
     php bin/console cronjob:delete
+
+ Log Consulting
+
+    php bin/console cronjob:log
 
 
 ## Example of a new Cronjob task

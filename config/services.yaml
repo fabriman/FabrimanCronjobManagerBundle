@@ -1,5 +1,5 @@
 parameters:
-  cronjob_log_directory: "%kernel.project_dir%/public/bundles/fmcronjobmanager/Cronjob/log"
+  cronjob_log_directory: "%kernel.project_dir%/public/Cronjob/"
 
 services:
     _defaults:
